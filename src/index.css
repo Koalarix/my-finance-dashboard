@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+  height: 100%;
+}
+
+body {
+  /*background-color: #22223b;*/
+  background-image: linear-gradient(#22223b, #2e2e50 );
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+input {
+  border: 1px solid;
+  border-color: rgb(206, 206, 206);
+  border-radius: 5px;
+}
+
+input:hover {
+  border: 1px solid;
+  border-color: #64B5F6;
+}
+
+#submitBtn {
+  border: none;
+  background-color: #fca311 ;
+}
+
+#submitBtn:hover {
+  border: none;
+  background-color: #f19040ea;
+  cursor: pointer;
+}
+
+/* /////Responsive CSS////////*/
+@media (min-width: 600px) {
+  #title {
+    font-size: 1.5em;
+  }
+
+  #subheading {
+    font-size: 1.5em;
+  }
+  
+  #stock {
+    height: 2rem;
+    width: 12em;
+  }
+
+  #quantity {
+    height: 2rem;
+    width: 12em;
+  }
+
+  #price {
+    height: 2rem;
+    width: 12em;
+  }
+
+  #stock::placeholder, 
+#quantity::placeholder,
+#price::placeholder  {
+  font-size: 0.9em;
+}
+
+  #submitBtn {
+    width: 10rem;
+    height: 35px;
+    font-size: 1rem;
+  
+  }
+
+  #nostocks {
+    font-size: 0.9em;
+  }
+
+  #listContainer {
+    min-width:15rem;
+    height: 9rem;
+  }
+
+  
+#stocklistblock {
+  font-size: 0.8em;
+}
+  
+  
+  
+}
+
+@media (min-width: 750px) {
+
+  #title {
+    font-size: 2.1em;
+  }
+
+  #subheading {
+    font-size: 1.7em;
+  }
+  
+ #input-container {
+  flex-direction: row;
+} 
+
+#stock {
+    height:2.2rem;
+    width: 12em;
+    margin-left: 1rem;
+}
+
+#quantity {
+  height:2.2rem;
+  width: 12em;
+}
+
+#price {
+  margin-right: 1rem;
+  height:2.2rem;
+  width: 12em;
+}
+
+#stock::placeholder, 
+#quantity::placeholder,
+#price::placeholder  {
+  font-size: 1em;
+}
+
+#submitBtn {
+  width: 12rem;
+  height: 45px;
+  font-size: 1.1rem;
+
+}
+
+#nostocks {
+  font-size: 1.18em;
+}
+
+#stocklistblock {
+  font-size: 1.05em;
+}
+
+#listContainer {
+  min-width:22rem;
+  height: 12rem;
+}
+
+}
+
+
+@media (min-width: 1240px) {
+
+  #title {
+    font-size: 3em;
+  }
+
+  #stock {
+    height:2.5rem;
+    width: 14em;
+    margin-left: 1rem;
+}
+
+  #quantity {
+    height:2.5rem;
+    width: 14em;
+  }
+
+  #price {
+    margin-right: 1rem;
+    height:2.5rem;
+    width: 14em;
+  }
+  
+  #submitBtn {
+    width: 15rem;
+    height: 3.5rem;
+    font-size: 1.3rem;
+
+  }
+
+  #nostocks {
+    font-size: 1.25em;
+  }
+
+  #subheading {
+    font-size: 2.2em;
+  }
+
+  #listContainer {
+    width:32rem;
+    height: 12rem;
+  }
+
+  #stocklistblock {
+    font-size: 1.2em;
+    padding-top: 15px;
+  }
+}
+
+/*////////End of responsive CSS//////// */
