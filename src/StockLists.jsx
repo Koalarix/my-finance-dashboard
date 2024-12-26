@@ -1,6 +1,6 @@
 import './App.css'
 import { useContext, useEffect, useRef } from "react"
-import StockDataContext from "./contexts/StockdataContext";
+import StockContext from "./contexts/StockContext";
 
 
 
@@ -13,7 +13,7 @@ function StockLists() {
     currentPrice, setCurrentPrice,
     formSubmitted, setFormSubmitted,
     stockData, setStockData
-  } = useContext(StockDataContext);
+  } = useContext(StockContext);
 
 
   const effectHasRun = useRef(false);
