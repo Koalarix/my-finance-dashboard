@@ -56,7 +56,7 @@ function Form() {
     currentPrice, setCurrentPrice, //current price for checking
     formSubmitted, setFormSubmitted,
     stockData
-  } = useContext(StockDataContext);
+  } = useContext(StockContext);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -162,7 +162,7 @@ function resetFormOnError() {
 
 function StockContainer() {
 
-  const {currentPrice} = useContext(StockDataContext);
+  const {currentPrice} = useContext(StockContext);
   const [isEmpty, setIsEmpty] = useState(true);
 
 
